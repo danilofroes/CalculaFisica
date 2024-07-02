@@ -1,0 +1,20 @@
+def velocidade_media(velocidade_media=None, deltaX=None, deltaT=None, x_inicial=None, x_final=None, t_inicial=None, t_final=None):
+    '''Calcula a velocidade média usando variação de posição e de tempo'''
+
+    if (velocidade_media == None) and (deltaX != None) and (deltaT != None) and (x_inicial == None) and (x_final == None) and (t_inicial == None) and (t_final == None):
+
+        velocidade_media = deltaX / deltaT
+
+        return velocidade_media, deltaX, deltaT
+    
+    elif (velocidade_media != None) and (deltaX == None) and (deltaT != None) and (x_inicial == None) and (x_final == None) and (t_inicial == None) and (t_final == None):
+
+        deltaX = velocidade_media * deltaT
+
+        return deltaX, velocidade_media, deltaT
+
+    
+
+
+
+
