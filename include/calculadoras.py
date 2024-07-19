@@ -1,3 +1,17 @@
+from math import sqrt, sin, cos
+
+def delta(f,i):
+    '''
+    Função que calcula o delta (variação) de alguma variável final e inicial
+
+    :param f: Variável final de delta
+    :param i: Variável inicial de delta
+    '''
+
+    delta_calc = f - i
+
+    return delta_calc
+
 def velocidade_media(velocidade_media=None, deltaX=None, deltaT=None, x_inicial=None, x_final=None, t_inicial=None, t_final=None):
     '''Utiliza da fórmula de velocidade média para encontrar algum valor específico'''
 
@@ -62,5 +76,42 @@ def velocidade_media(velocidade_media=None, deltaX=None, deltaT=None, x_inicial=
         return t_inicial, t_final, deltaX, velocidade_media, deltaT
 
     else:
-        
+
         return "Parâmetros insuficientes ou inválidos"
+    
+
+def torricelli(vf, v0, a, deltax):
+
+    vf = sqrt((v0**2) + (2 * a * deltax))
+
+def funcao_horaria_posicao_mu(s, s0, v, t):
+
+    s = s0 + (v * t)
+
+def funcao_horaria_posicao_muv(s, s0, v0, t, a):
+
+    s = s0 + (v0 * t) + ((a * (t**2)) / (2))
+
+def funcao_horaria_velocidade_muv(v, v0, a, t):
+
+    v = v0 + (a * t)
+
+def velocidade_media_muv(vm, v0, vf):
+
+    vm = (v0 * vf) / 2
+
+def altura_max_lancamento_vertical(hmax, s0, v0, g):
+
+    hmax = s0 + ((v0**2) / (2 * g))
+
+def lancamento_horizontal(sx, s0x, vx, t, sy, s0y, v0y, g):
+
+    sx = s0x + vx * t
+
+    sy = s0y + v0y * t - ((g * (t**2)) / 2)
+
+def segunda_lei_newton(fr, m, a):
+
+    fr = m * a
+
+
