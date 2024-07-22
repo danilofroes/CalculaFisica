@@ -1,16 +1,16 @@
 from math import sqrt, sin, cos
 
+erro = "Parâmetros insuficientes para o cálculo"
+
 def delta(f,i):
     '''
     Função que calcula o delta (variação) de alguma variável final e inicial
 
     :param f: Variável final de delta
     :param i: Variável inicial de delta
+    :return: Resultado do intervalo de delta
     '''
-
-    delta_calc = f - i
-
-    return delta_calc
+    return f - i
 
 def velocidade_media(velocidade_media=None, deltaX=None, deltaT=None, x_inicial=None, x_final=None, t_inicial=None, t_final=None):
     '''Utiliza da fórmula de velocidade média para encontrar algum valor específico'''
@@ -77,7 +77,7 @@ def velocidade_media(velocidade_media=None, deltaX=None, deltaT=None, x_inicial=
 
     else:
 
-        return "Parâmetros insuficientes ou inválidos"
+        return erro
     
 
 def torricelli(vf, v0, a, deltax):
