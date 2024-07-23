@@ -5,4 +5,6 @@ from include import calculadoras
 def main():
     '''Home'''
 
+    calculadoras.delta()
+
     
