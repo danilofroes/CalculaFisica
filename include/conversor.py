@@ -41,29 +41,36 @@ def converter_distancia(valor, unidade_original, unidade_final):
     :return: Valor convertido
     '''
 
-    # Dicionário de conversões com base em metros
+    # Dicionário de conversões com base em metro
     unidades = {
-        "ym" : 10e-24,
-        "zm" : 10e-21,
-        "am" : 10e-18,
-        "fm" : 10e-15,
-        "pm" : 10e-12,
-        "nm" : 10e-9,
-        "µm" : 10e-6,
-        "mm" : 10e-3,
-        "cm" : 10e-2,
-        "dm" : 10e-1,
-        "m" : 1,
-        "dam" : 10,
-        "hm" : 100,
-        "km" : 1000,
-        "Mm" : 10e6,
-        "Gm" : 10e9,
-        "Tm" : 10e12,
-        "Pm" : 10e15,
-        "Em" : 10e18,
-        "Zm" : 10e21,
-        "Ym" : 10e24
+        "ym"    : 1e-24,         # yoctômetro
+        "zm"    : 1e-21,         # zeptômetro
+        "am"    : 1e-18,         # attômetro
+        "fm"    : 1e-15,         # fentômetro
+        "pm"    : 1e-12,         # picômetro
+        "nm"    : 1e-9,          # nanômetro
+        "µm"    : 1e-6,          # micrômetro
+        "mm"    : 1e-3,          # milímetro
+        "cm"    : 1e-2,          # centímetro
+        "dm"    : 1e-1,          # decímetro
+        "m"     : 1,             # metro
+        "dam"   : 1e1,           # decâmetro
+        "hm"    : 1e2,           # hectômetro
+        "km"    : 1e3,           # quilômetro
+        "Mm"    : 1e6,           # megâmetro
+        "Gm"    : 1e9,           # gigâmetro
+        "Tm"    : 1e12,          # terâmetro
+        "Pm"    : 1e15,          # petâmetro
+        "Em"    : 1e18,          # exametro
+        "Zm"    : 1e21,          # zettâmetro
+        "Ym"    : 1e24,          # yottâmetro
+        "milha" : 1609.344,      # milha
+        "jarda" : 0.9144,        # jarda
+        "foot"  : 0.3048,        # pé
+        "inch"  : 0.0254,        # polegada
+        "UA"    : 1.496e11,      # unidade astronômica
+        "ly"    : 9.461e15,      # ano-luz
+        "pc"    : 3.086e16       # parsec
     }
 
     valor_em_metros = valor * unidades[unidade_original]
