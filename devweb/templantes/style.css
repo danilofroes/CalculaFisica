@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
+
+a {
+    color: wheat;
+}
+
+.em-breve {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
