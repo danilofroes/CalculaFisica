@@ -88,3 +88,30 @@ def converter_temperatura(valor, unidade_original, unidade_final):
     :return: Valor convertido
     '''
 
+    valor_convertido = None
+
+    if unidade_original.lower() == "kelvin" and unidade_final.lower() == "celsius":
+
+        valor_convertido = valor - 273
+
+    elif unidade_original.lower() == "kelvin" and unidade_final.lower() == "fahrenheit":
+
+        valor_convertido = (valor - 273) * 1.8 + 32
+
+    elif unidade_original.lower() == "celsius" and unidade_final.lower() == "kelvin":
+
+        valor_convertido = valor + 273
+
+    elif unidade_original.lower() == "celsius" and unidade_final.lower() == "fahrenheit":
+
+        valor_convertido = valor * 1.8 + 32
+
+    elif unidade_original.lower() == "fahrenheit" and unidade_final.lower() == "celsius":
+
+        valor_convertido = (valor - 32) / 1.8
+
+    elif unidade_original.lower() == "fahrenheit" and unidade_final() == "kelvin":
+
+        valor_convertido = (valor - 32) * (5/9) + 273
+
+    return valor_convertido
