@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,18 +11,33 @@ body {
     background-color: black;
 }
 
-h1 {
+.em-breve {
+    margin: 4%;
+}
+
+.em-breve__principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.em-breve__principal__titulo {
     color: white;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 80px;
 }
 
-a {
-    color: wheat;
-}
-
-.em-breve {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.em-breve__principal__github__link {
+    background-color: #181717;
+    width: 350px;
+    border-radius: 16px;
+    padding: 21.5px 0px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
 }
